@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, /*test git*/
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: #dff2ea;
+    }
+
+    .logo p {
+      color: rgb(18, 156, 110);
+      font-size: 40px;
+      font-family: sans-serif;
+      margin: 0;
+      margin-left: 90px;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    .main-menu-item {
+      list-style: none;
+      font-weight: bold;
+    }
+    #menu ul {
+      list-style-type: none;
+      text-align: center;
+      margin-top: -20px;
+    }
+
+    #menu li {
+      color: #f1f1f1;
+      display: inline-block;
+      width: 120px;
+      height: 40px;
+      line-height: 40px;
+      margin-left: -20px;
+    }
+
+    .main-menu-item a {
+      text-decoration: none;
+      color: rgba(35, 31, 31, 0.502);
+      text-transform: capitalize;
+      width: 900px;
+      height: 100px;
+      font-family: sans-serif;
+      font-size: 15px;
+      margin-left: 120px;
+    }
+
+    .main-menu-item-active a {
+      color: #151717;
+    }
+
+    .btn {
+      color: #222423;
+      background: #fafffc;
+      border-radius: 20px;
+      border: none;
+      padding: 10px;
+      width: 150px;
+      height: 40px;
+      margin-left: 20px;
+    }
+
+    .btn-demo {
+      margin-left: 20px;
+    }
+    .btn-demo:hover {
+      background-color: #bec2c0;
+      border-radius: 20px;
+    }
+    .btn-warning:hover {
+      background-color: #bec2c0;
+      border-radius: 20px;
+    }
+
+    .banner-description {
+      /* border: 1px solid red; */
+    }
+    .btn-info {
+      /*su*/
+      background: rgba(18, 156, 110, 0.8);
+      font-size: 15px;
+      color: #dfebe4;
+      border-radius: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-weight: bold;
+      width: 100px;
+    }
+    .btn-info:hover {
+      background-color: #84baa3;
+    }
+    .btn-danger {
+      /*log*/
+      background: none;
+      font-size: 15px;
+      color: rgba(35, 31, 31, 0.502);
+      border-radius: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-weight: bold;
+      width: 100px;
+    }
+    .btn-danger:hover {
+      background-color: #84baa3;
+      color: #212422;
+    }
+
+    .header-button-group {
+      /*log su*/
+      text-align: right;
+      position: relative;
+      top: -55px;
+      right: 50px;
+      margin-right: 50px;
+    }
+    .btn-warning {
+      /*tryfrể*/
+      background: rgba(18, 156, 110, 0.8);
+      color: #fff;
+      margin-left: 90px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 10px;
+    }
+
+    .banner-description-title {
+      font-weight: bold;
+      font-size: 60px;
+      font-family: sans-serif;
+      margin-left: 90px;
+      margin-right: 900px;
+    }
+    .banner-description-break {
+      width: 100%;
+      border-top-right-radius: 1000px;
+      border-top-left-radius: 1000px;
+    }
+    .banner-description-content {
+      font-weight: 700;
+      font-family: sans-serif;
+      color: #404241;
+      margin-left: 90px;
+      margin-right: 900px;
+    }
+
+    .btn-round {
+      /*try free*/
+      border-radius: 20px;
+    }
+
+    .text-greyEnter {
+      color: #aaa;
+      margin-left: 20px;
+      padding-top: 15px;
+    }
+    .form-group {
+      display: block;
+      background: #fff;
+      width: 320px;
+      height: 100px;
+      margin-left: 700px;
+      border-radius: 10px;
+      margin-bottom: 480px;
+      margin-top: -480px;
+    }
+    .text-grey {
+      color: #aaa;
+      margin-top: 50px;
+    }
+    .Total-income {
+      /*income */
+      display: block;
+      background: #fff;
+      width: 150px;
+      height: 70px;
+      border-radius: 10px;
+      padding-left: 20px;
+      margin-left: 800px;
+      margin-top: -250px;
+      margin-bottom: 250px;
+    }
+    .img-chart {
+      /*img chart*/
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      margin-left: 70px;
+      margin-top: -38px;
+    }
+    .form-control-input {
+      border: none;
+      border-bottom: 1px solid #aaa;
+      margin-left: 20px;
+    }
+    .btn-sm {
+      padding: 5px;
+      width: 80px;
+      height: 25px;
+      font-size: 14px;
+    }
+    .imageright {
+      margin-left: 1000px;
+      margin-top: -400px;
+    }
+    .title-p2{
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 32px;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="header-top">
+        <!-- top head -->
+        <div class="logo">
+          <p>Biccas</p>
+        </div>
+        <div>
+          <!--  menu -->
+          <nav id="menu" , class="main-menu">
+            <ul>
+              <li class="main-menu-item main-menu-item-active">
+                <a href="">Home</a>
+              </li>
+              <li class="main-menu-item"><a href="">Product</a></li>
+              <li class="main-menu-item"><a href="">FAQ</a></li>
+              <li class="main-menu-item"><a href="">home</a></li>
+              <li class="main-menu-item"><a href="">home</a></li>
+            </ul>
+          </nav>
+
+          <!-- button -->
+
+          <div class="header-button-group">
+            <button class="btn btn-danger">Login</button>
+            <button class="btn btn-info">Sign up</button>
+          </div>
+        </div>
+      </div>
+      <!-- bot head -->
+      <div class="header-bottom">
+        <!-- left -->
+        <div class="banner-description">
+          <p class="banner-description-title">
+            We're here to Increase your Productivity
+          </p>
+          <div class="banner-description-break"></div>
+
+          <p class="banner-description-content">
+            Let's make your work more orgenize and easily using the Taskio
+            Dashboard with many of the latest featuresin managing work everyday.
+          </p>
+          <div class="banner-description-btn">
+            <button class="btn btn-warning btn-round">Try Free Trial</button>
+            <button class="btn btn-demo">View Demo</button>
+          </div>
+        </div>
+
+        <!-- right -->
+
+        <div class="banner-image-wrap">
+          <img
+            class="imageright"
+            src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/356283379_798609345307925_7652278060345458271_n.png?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=ae9488&_nc_ohc=I6YkHwzKGnQAX8tVFYT&_nc_ht=scontent.fhan14-1.fna&oh=03_AdT2vseN4IcxBLt_y2YMgGwCVvUJWvmiPgCdzBEdxgQ9Wg&oe=64C123E9"
+            alt="Header bottom right img"
+          />
+
+          <!-- <img src="./images/card.png" alt="Credit card" /> -->
+          <form action="">
+            <div class="form-group">
+              <p class="text-greyEnter">Enter amount</p>
+              <input class="form-control-input" type="text" value="$450.00" />
+              <button class="btn btn-info btn-round btn-sm">Send</button>
+            </div>
+          </form>
+          <div class="Total-income">
+            <p class="text-grey">Total Income</p>
+            <p>$245.00</p>
+            <img
+              class="img-chart"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpkQiq71Djj_m-wiwtyLw1mJkiTy9t9NjyYg&usqp=CAU"
+              alt="icon"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main id="main">
+      <!-- Part 1 -->
+      <section id="analyst">
+        <h2 class = "title-p2">More than 25,000 teams use Collabs</h2>
+
+        <div>
+          <div>
+            <img src="./images/mac.png" alt="Company Icon" />
+            <p>Unsplash</p>
+          </div>
+          <div>
+            <img src="./images/mac.png" alt="Company Icon" />
+            <p>Unsplash</p>
+          </div>
+          <div>
+            <img src="./images/mac.png" alt="Company Icon" />
+            <p>Unsplash</p>
+          </div>
+          <div>
+            <img src="./images/mac.png" alt="Company Icon" />
+            <p>Unsplash</p>
+          </div>
+          <div>
+            <img src="./images/mac.png" alt="Company Icon" />
+            <p>Unsplash</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              recusandae perferendis necessitatibus blanditiis placeat minus
+              sequi! Velit odio repellat, cumque nostrum, porro perspiciatis
+              dolorem repudiandae nihil ad quas eum commodi.
+            </p>
+
+            <div>
+              <!-- rating -->
+              <div>
+                <img src="./images/star.png" alt="star icon" />
+                <p>4.9/5 rating</p>
+                <p>Databricks</p>
+              </div>
+              <div>
+                <img src="./images/star.png" alt="star icon" />
+                <p>4.9/5 rating</p>
+                <p>Databricks</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div>
+                <img src="./images/analyst.png" alt="star icon" />
+              </div>
+              <div>
+                <h3>Pushlishing</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Animi repudiandae iure ipsa debitis necessitatibus cumque
+                  officiis numquam, voluptates magni explicabo saepe optio. Eos,
+                  tempora rerum a iste sunt laborum ut.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <img src="./images/analyst.png" alt="star icon" />
+              </div>
+              <div>
+                <h3>Pushlishing</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Animi repudiandae iure ipsa debitis necessitatibus cumque
+                  officiis numquam, voluptates magni explicabo saepe optio. Eos,
+                  tempora rerum a iste sunt laborum ut.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <img src="./images/analyst.png" alt="star icon" />
+              </div>
+              <div>
+                <h3>Pushlishing</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Animi repudiandae iure ipsa debitis necessitatibus cumque
+                  officiis numquam, voluptates magni explicabo saepe optio. Eos,
+                  tempora rerum a iste sunt laborum ut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 2 -->
+      <section id="feature">
+        <div>
+          <div>
+            <h1>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Distinctio nobis saepe sint totam minus quaerat ipsa officiis id
+              quasi corrupti officia, cupiditate, soluta optio? Deserunt at ad
+              voluptatem sequi laborum!
+            </h1>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+              quos perferendis molestias consequatur, a quisquam dicta
+              consectetur dolor dolorem ea id assumenda! Obcaecati ipsam,
+              laborum suscipit laudantium esse animi vel.
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-info btn-round">Get Started</button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <img src="./images/mac.png" alt="Logo" />
+            </div>
+            <h1>Colloboration Team</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="./images/mac.png" alt="Logo" />
+            </div>
+            <h1>Colloboration Team</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="./images/mac.png" alt="Logo" />
+            </div>
+            <h1>Colloboration Team</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 3 -->
+      <section id="benifit">
+        <div>
+          <h1>What benifit will you get</h1>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+        <div>
+          <img src="./images/mac.png" alt="imgage Part 3" />
+          <div>
+            <div><img src="./images/person.png" alt="Icon Persion" /></div>
+            <div>
+              <p>Anmada Young</p>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            <div><img src="./images/person.png" alt="icon message" /></div>
+          </div>
+          <div>
+            <div><img src="./images/person.png" alt="Icon " /></div>
+            <p>Money Tranfer success</p>
+          </div>
+
+          <div>
+            <div>
+              <p>Total Income</p>
+              <p>240$</p>
+            </div>
+            <div><img src="./images/person.png" alt="Icon grouth up" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 4 -->
+      <section id="plan">
+        <div>
+          <h1>Choose plan</h1>
+          <h1>That rigth for you</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+          <div>
+            <button class="btn">Bill Monthly</button>
+            <button class="btn btn-info">Bill Yearly</button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1>Free</h1>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p><span>$0</span></p>
+            <ul>
+              <li>2file</li>
+              <li>3 users</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+            <div>
+              <button class="btn">Sign for free</button>
+            </div>
+          </div>
+          <div>
+            <h1>Free</h1>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p><span>$0</span></p>
+            <ul>
+              <li>2file</li>
+              <li>3 users</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+            <div>
+              <button class="btn">Sign for free</button>
+            </div>
+          </div>
+          <div>
+            <h1>Free</h1>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p><span>$0</span></p>
+            <ul>
+              <li>2file</li>
+              <li>3 users</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+            <div>
+              <button class="btn">Sign for free</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 5 -->
+      <section id="contact">
+        <div>
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id
+            minima doloremque dolo
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            in quasi quaerat sed fugit rerum nesciunt obcaecati dolores ad
+            praesentium, voluptatibus ipsa, adipisci id quae velit itaque
+            accusantium voluptate voluptas?
+          </p>
+          <div>//</div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+            temporibus enim dolores architecto, nostrum obcaecati repudiandae
+            esse sunt aspernatur nemo officia atque minus quaerat minima iure?
+            Neque debitis odit dolores.
+          </p>
+          <p>_huyhq</p>
+
+          <div>
+            <a href=""><img src="" alt="Profile Image" /></a>
+            <a href=""><img src="" alt="Profile Image" /></a>
+            <a href=""><img src="" alt="Profile Image" /></a>
+            <a href=""><img src="" alt="Profile Image" /></a>
+            <a href=""><img src="" alt="Profile Image" /></a>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img src="./images/mac.png" alt="Databricks" />
+            <h2>Get Started</h2>
+          </div>
+
+          <div>
+            <form action="">
+              <div>
+                <label for="">Email</label>
+                <input type="text" placeholder="Enter your email" />
+              </div>
+
+              <div>
+                <label for="">Message</label>
+                <textarea rows="2"> </textarea>
+              </div>
+              <div>
+                <button>Request Demo</button>
+              </div>
+              <div>
+                <div>
+                  <span>or</span>
+                  <a href=""> Start Free Trial</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer">
+      <div>
+        <div>
+          <div class="logo">
+            <p>Biccas</p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+            ipsa neque alias, consequatur enim, repellendus provident
+            necessitatibus eaque sed totam iure eligendi ipsam architecto ullam
+            impedit. Quod inventore atque obcaecati?
+          </p>
+          <div>
+            <input type="text" placeholder="email" />
+            <img src="" alt="Icon" />
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Support</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="">Help And Solution</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="">Product</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <p>Coppry right by <a href="fb.com/aada">@huyhq</a></p>
+        <div>
+          <a href="">Term</a>
+          <a href="">Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
